@@ -1,0 +1,61 @@
+.buttonHov{
+    transition: .3s ;
+    border-radius: 3px;
+}
+
+.wrapper{
+    width: fit-content;
+    margin-top: 30px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    .inputs{
+
+        display: flex;
+        flex-direction: column;
+      
+        input{
+            margin: 10px;
+            border: 1px solid rgba(0, 0, 0, 0.1) ;
+            width: 400px;    
+            padding: 10px
+        }
+    }
+    
+    .buttons{
+        button{
+            margin-left: 5px;
+            background-color: #fff;
+            cursor: pointer;
+        }
+    }
+    
+    .update:hover{
+       .buttonHov();
+        background-color: rgb(140, 221, 240);
+    }
+    .complite__active{
+        background-color: rgb(158, 242, 123) !important;
+    }
+    .complite__active:hover{
+        .buttonHov();
+        background-color: #fff !important;
+    }
+    .complite:hover{
+        .buttonHov();
+        background-color: rgb(158, 242, 123);
+    }
+    .delite:hover{
+        .buttonHov();
+        background-color: rgb(237, 90, 90);
+    }
+    .delite{
+        margin-right: 20px;
+    }
+}
+
+
+.broken{
+    background-color: rgb(220, 124, 124);
+    .wrapper()
+}
